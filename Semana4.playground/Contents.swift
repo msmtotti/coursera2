@@ -14,10 +14,10 @@ enum Velocidades : Int{
 }
 
 class Auto {
-    var velocidad = Velocidades.Apagado
+    var velocidad : Velocidades
     
     init(){
-        velocidad = .Apagado
+        velocidad = Velocidades(velocidadInicial: .Apagado)
     }
     
     func cambioDeVelocidad() -> (actual : Int, velocidadEnCadena : String) {
@@ -57,10 +57,5 @@ for cambios in 1...20{
     print("\(cambios). \(regreso.actual), \(regreso.velocidadEnCadena)")
     
 }
-
-
-
-
-
 
 
